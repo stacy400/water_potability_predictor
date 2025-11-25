@@ -61,8 +61,13 @@ pip install -r app/requirements.txt
 
 #### Step 3: Run Backend Server
 ```bash
-cd app
-python main.py
+# From the repo root
+set PYTHONPATH=backend
+python -m uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+
+# Or on Windows PowerShell:
+$env:PYTHONPATH = 'backend'
+C:\Users\Admin\AppData\Local\Programs\Python\Python312\python.exe -m uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 
 # Server will start on http://localhost:8000
 # API docs available at http://localhost:8000/docs
@@ -283,11 +288,13 @@ PORT=3001 npm start
 
 ### Backend
 ```bash
-# Run with auto-reload
-uvicorn main:app --reload
+# From repo root, set PYTHONPATH and run
+set PYTHONPATH=backend
+python -m uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 
-# Run with specific host/port
-uvicorn main:app --host 0.0.0.0 --port 8001
+# Or with specific host/port
+set PYTHONPATH=backend
+python -m uvicorn app.main:app --host 0.0.0.0 --port 8001
 ```
 
 ### Frontend
