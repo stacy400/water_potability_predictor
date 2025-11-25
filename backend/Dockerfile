@@ -1,22 +1,12 @@
-FROM python:3.12-slimFROM python:3.11-slim
+FROM python:3.12-slim
 
+WORKDIR /app
 
+COPY backend/app/requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
 
-WORKDIR /appWORKDIR /app
-
-
-
-COPY backend/app/requirements.txt .COPY backend/app/requirements.txt .
-
-RUN pip install --no-cache-dir -r requirements.txtRUN pip install --no-cache-dir -r requirements.txt
-
-
-
-COPY backend/app .COPY backend/app .
-
+COPY backend/app .
 COPY backend/__init__.py /app/
-
-CMD ["python", "main.py"]
 
 ENV PYTHONUNBUFFERED=1
 ENV PYTHONPATH=/app:$PYTHONPATH
