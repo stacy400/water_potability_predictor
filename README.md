@@ -1,5 +1,5 @@
 # Water Potability Predictor
-
+DEPLOYMENT LINK  https://ai-water-quality-predictor.vercel.app/
 A machine learning application to predict water potability using water quality metrics.
 
 ## Project Structure
@@ -18,7 +18,6 @@ water_potability_predictor/
 │ ├─ notebooks/
 │ │ └─ 01_data_cleaning_and_training.ipynb
 │ ├─ train.py
-│ ├─ dataset_generator.py
 │ └─ requirements.txt
 ├─ frontend/
 │ ├─ src/
