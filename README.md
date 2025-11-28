@@ -1,7 +1,9 @@
 # Water Potability Predictor
-DEPLOYED ML ONLY ON https://ai-powered-water-quality-predictor-4.onrender.com/   on this repo   https://github.com/David-Ochieng/AI-powered-water-quality-predictor.git
-DEPLOYMENT LINK  https://ai-water-quality-predictor.vercel.app/
-A machine learning application to predict water potability using water quality metrics.
+-DEPLOYED ML ONLY ON https://ai-powered-water-quality-predictor-4.onrender.com/   on this repo   https://github.com/David-Ochieng/AI-powered-water-quality-predictor.git
+
+-DEPLOYMENT LINK  https://ai-water-quality-predictor.vercel.app/
+
+-A machine learning application to predict water potability using water quality metrics.
 
 ## Project Structure
 
